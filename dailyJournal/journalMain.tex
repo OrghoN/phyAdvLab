@@ -1,0 +1,105 @@
+\documentclass[oneside]{tufte-book}
+% \documentclass[12pt, oneside]{article}
+
+\title{Daily Journal\\Muon Detection}
+\author{Orgho Neogi}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\makeatletter
+
+\usepackage{graphicx}
+
+\usepackage{float}
+
+% \usepackage[colorlinks=true]{hyperref}
+
+\usepackage{enumitem}
+
+\usepackage[english]{babel}
+
+\usepackage{amsthm,thmtools}
+\usepackage[nottoc]{tocbibind}
+
+\usepackage{caption}
+
+\usepackage{longtable}
+
+\usepackage{lipsum}
+
+\newenvironment{loggentry}[2]% date, heading
+% {\noindent\textbf{#2}\marginnote{#1}\\}{\vspace{0.5cm}}
+{\noindent\huge{\textbf{#2}}\normalsize\vspace{0.5cm}\marginnote{#1}\\}{\vspace{0.5cm}}
+
+\setlength{\parskip}{1em}
+\usepackage{geometry}
+
+\geometry{
+  left=1in, % left margin
+  textwidth=35pc, % main text block
+  marginparsep=2pc, % gutter between main text block and margin notes
+  marginparwidth=5pc % width of margin notes
+}
+
+
+\begin{document}
+
+\maketitle
+
+% \tableofcontents
+
+\begin{loggentry}{2018-Aug-27}{High Voltage Power}
+
+  Geiger tubes need high voltage power (400V) and to produce it, we are using a 16EPC-T06 module .
+
+  Parts List:
+  \begin{enumerate}
+    \item 16EPC-T06 (High Voltage Generator)
+    \item 100nF capacitor
+    \item LM317 (Voltage Regulator)
+    \item 10K POT
+    \item 470 $\Omega$ resistor
+    \item 1000 nF capacitor
+  \end{enumerate}
+
+\end{loggentry}
+
+\begin{loggentry}{2018-Aug-28}{Bridge Rectifier}
+
+  Got high voltage AC output out of the 16EPC-T06 at 400 V. Finished making the bridge rectifier afterwards, but it is only doing half wave rectification. Probably something to do with how the circuit is wired since the diodes are working fine individually. Tested it out with a signal generator and scope, still doing half wave rectification so not a problem with high voltage circuit.
+
+  Multimeter cannot read high voltage AC since it seems the frequency is too high but the scope with a voltage divider can read it fine.
+
+\end{loggentry}
+
+\begin{loggentry}{2018-Aug-29}{True Ground}
+
+    The issue with the rectifier was not in measuring the circuit but rather in how the measurement was happening.
+
+  \begin{figure}
+      \centering
+      % \def\svgscale{0.2}
+      \input{correctBridgeRectifier.pdf_tex}
+      \caption{Bridge Rectifier Circuit}
+      \label{correctBridgeRectifier}
+  \end{figure}
+
+    The correct bridge rectifier is Figure \ref{correctBridgeRectifier} and I had built the circuit correctly but there was a problem in measuring with the scope since I had hooked up the scope ground to $V_-$.
+
+    This situation is represented by Figure \ref{bridgeRectifierProblem}.
+
+    \begin{figure}
+        \centering
+        % \def\svgscale{0.2}
+        \input{bridgeRectifierProblem.pdf_tex}
+        \caption{Measurement Problem. Red represents current flow}
+        \label{bridgeRectifierProblem}
+    \end{figure}
+
+    When attempting to measure, current would flow through when the input voltage was positive but no current would flow when it was negative thus resulting in the half wave rectification we saw on the scope.
+
+    To measure correctly, one channel of the scope has to be hooked up to $V_+$ and ground while the other is hooked to $V_-$ and ground. The two channels can then be subtracted to measure the fully rectified signal.
+
+\end{loggentry}
+
+\end{document}
