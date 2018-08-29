@@ -90,7 +90,6 @@
 
     \begin{figure}
         \centering
-        % \def\svgscale{0.2}
         \input{bridgeRectifierProblem.pdf_tex}
         \caption{Measurement Problem. Red represents current flow}
         \label{bridgeRectifierProblem}
@@ -99,6 +98,20 @@
     When attempting to measure, current would flow through when the input voltage was positive but no current would flow when it was negative thus resulting in the half wave rectification we saw on the scope.
 
     To measure correctly, one channel of the scope has to be hooked up to $V_+$ and ground while the other is hooked to $V_-$ and ground. The two channels can then be subtracted to measure the fully rectified signal.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=90mm]{rectifierScope.JPG}
+        \caption{Scope output of rectified signal}
+        \label{rectifierScope}
+    \end{figure}
+
+    Parts List:
+    \begin{enumerate}
+      \item diode $\times$ 4
+      \item 10 $\mu$F capacitor
+    \end{enumerate}
+
 
 \end{loggentry}
 
