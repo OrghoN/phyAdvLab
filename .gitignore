@@ -17,6 +17,7 @@
 *.zip
 
 # Images
+*.JPG
 *.jpg
 *.gif
 *.png
