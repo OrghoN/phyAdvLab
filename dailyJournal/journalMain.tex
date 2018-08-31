@@ -125,8 +125,6 @@
     \begin{enumerate}
       \item diode $\times$ 4
       \item 100 $\mu$F 400 V capacitor
-      \item 10 M$\Omega$ resistor
-      \item 5.6 pF capacitor
     \end{enumerate}
 
     \begin{figure}
@@ -140,10 +138,42 @@
     \begin{figure}
         \centering
         \input{scopeMeasurement.pdf_tex}
-        \caption{Measuring High Voltage With Scope from Rectifier. The resistor values attenuate signal 100$\times$}
-        \label{bridgeRectifierProblem}
+        \caption{Measuring High Voltage With Scope from Rectifier. The resistor values attenuate signal $\times$100}
+        \label{scopeMeasurement}
     \end{figure}
 
+    \begin{enumerate}
+      \item 10 M$\Omega$ resistor
+      \item 1K$\Omega$ resistor
+      \item 1M$\Omega$ resistor
+      \item diode $\times$ 2
+      \item 5.6 pF capacitor
+      \item 1nF capacitor
+      \item 100 nF capacitor
+      \item 74HC04 hex NOT gate
+    \end{enumerate}
+
+    A single geiger tube, once hooked up is producing pulses at an appropriate rate.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=90mm]{geigerPulse.jpg}
+        \caption{Negative pulse from single geiger tube}
+        \label{geigerScope}
+    \end{figure}
+  \end{loggentry}
+
+  \begin{loggentry}{2018-Aug-31}{Soldering down Power}
+    Soldered down high voltage power supply into breadboard. The output voltage is 380 V.
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=45mm]{highVoltagePowerBB.jpg}
+        \caption{High Voltage power supply taking in 5V and Ground on red and black wires and outputting on orange and gray ones.}
+        \label{highVoltagePowerSolder}
+    \end{figure}
+
+    Scope doesn't explain why 400V was not found on the output end because the inital breadboard gave 395 V.
   \end{loggentry}
 
 
