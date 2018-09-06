@@ -62,6 +62,13 @@
       \item 1000 nF capacitor
     \end{enumerate}
 
+    \begin{figure}
+        \centering
+        \includegraphics[width=\textwidth]{highVoltageSchematic.png}
+        \caption{Schematic of high voltage supply with corresponding waveforms of signal at different points through the circuit.}
+        \label{highVoltagePowerSchematic}
+    \end{figure}
+
   \end{loggentry}
 
   \begin{loggentry}{2018-Aug-28}{Bridge Rectifier}
@@ -174,6 +181,43 @@
     \end{figure}
 
     Scope doesn't explain why 400V was not found on the output end because the inital breadboard gave 395 V.
+  \end{loggentry}
+
+  \begin{loggentry}{2018-Sep-3}{Hex Inverter}
+    We decided to go with hex inverters instead of schmidt triggers since that gave a cleaner pulse.
+
+    We thought that the issue might be something to do with the power draw on the two chips, i\.e\. the schmidt trigger drew more power when switching states and a decoupling capacitor was placed between power and ground.
+
+    However, even after the capacitor was placed, there was ringing in the output signal from the schmidt trigger and the pulse was too wide for the purposes of coincidence detection, leading to us reverting back to not gates.
+
+    When using not gates, the decoupling capacitor didn't improve the signal and so was removed from the circuit.
+  \end{loggentry}
+
+  \begin{loggentry}{2018-Sep-4}{Building Structure}
+    The muons will be detected via coincidence of flashes. This is why the device is created with two rows in mind. Each row has 9 geiger tubes because it uses board real estate efficiently by not wasting any not gates on a hex inverter and by needing only one priority encoder per row. Of the priority encoders we have, the one that can handle the highest number of inputs (74HC/HCT147), can only handle 9.
+
+    The idea is to have a wooden base and sides with plexiglass going on the top and bottom as well as between the geiger tubes as shown in Figure \ref{coincidenceDetection}.
+
+    \begin{figure}
+        \centering
+        \def\svgscale{0.36}
+        \input{geigerCoincidence.pdf_tex}
+        \caption{Preliminary schematic of the design of the detector, color coded to show coincidence. A muon is counted if it lights up the tube directly beneath the one activated on the top or the two tubes directly adjacent to that tube.}
+        \label{coincidenceDetection}
+    \end{figure}
+
+    The circuit boards may end up above and below the plexiglass or up the sides of the walls of the wooden box. Carriage bolts driven into the wood will form the bulk of the internal Structure, with pvc pipe going around it between the layers that have tubes to give more rigidity to it.
+
+    We might also have to add lead or copper shielding between the layers of geiger counters to prevent compton scattering and cross talk between the tubes. 6mm of lead, 12mm of copper or 25mm of aluminum should be suitable.
+
+  \end{loggentry}
+
+  \begin{loggentry}{2018-Sep-5}{Eagle and PCB}
+    We wanted to mill out the circuit for detecting pulses from the geiger tubes to cut down on the amount of wiring that had to be done as well as adding more flexibility to the design and potentially reducing the size of the final circuit which is a positive when making a portable detector.
+
+    The CNC machine that would be doing the milling requires g-code for the drill to move and the standard for PCB design is gerber files. There is a software Eagle that has a free version sufficient for our needs to design PCB's and a built in plugin to convert these PCB's to g-code so it can be sent to the CNC.
+
+    The lack of a solder mask means there is exposed copper on both sides. To deal with this we can either sand off the copper on the side where components will be placed or create a 2 sided pcb where the holes are separated out on both sides. The advantages of doing a 2 sided PCB is that a ground plane can be added on both sides but it will take longer since it requires using the CNC twice. There is also the additional trouble of aligning the board with the CNC which can be used with templating holes. Sanding off the copper is much faster and provides an insulating top layer similar to a breadboard.
   \end{loggentry}
 
 
