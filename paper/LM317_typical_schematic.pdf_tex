@@ -1,0 +1,70 @@
+%% Creator: Inkscape inkscape 0.92.2, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'LM317_typical_schematic.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%%
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450.85184686bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.38007411)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{LM317_typical_schematic.pdf}}%
+    \put(0.37125441,0.32948219){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny IN\end{tabular}}}}%
+    \put(0.38456253,0.35535982){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny LM317\end{tabular}}}}%
+    \put(0.40898548,0.33096161){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny OUT\end{tabular}}}}%
+    \put(0.39999884,0.2987981){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}\tiny ADJ\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{LM317_typical_schematic.pdf}}%
+    \put(0.57296883,0.26248578){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}R1\end{tabular}}}}%
+    \put(0.57367589,0.11392415){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}R2\end{tabular}}}}%
+    \put(0.93919462,0.28599092){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Vout\end{tabular}}}}%
+    \put(-0.00031191,0.2841636){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}Vin\end{tabular}}}}%
+    \put(0.00930988,0.20607468){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}100nF\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{LM317_typical_schematic.pdf}}%
+    \put(0.85604968,0.20287478){\makebox(0,0)[lt]{\lineheight{0}\smash{\begin{tabular}[t]{l}100nF\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

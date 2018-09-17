@@ -1,0 +1,333 @@
+\documentclass[oneside]{article}
+% \documentclass[12pt, oneside]{article}
+
+\title{Relativistic Muon}
+\author{Kean Johansen \& Orgho Neogi}
+% \date{23 October 2017}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\makeatletter
+
+\usepackage{graphicx}
+
+\usepackage{float}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\usepackage{enumitem}
+
+\usepackage{epigraph}
+
+\usepackage{csquotes}
+
+\usepackage[english]{babel}
+
+\usepackage{amsthm,thmtools}
+\usepackage[nottoc]{tocbibind}
+
+\usepackage{caption}
+
+\usepackage{longtable}
+
+\setlength{\parskip}{1em}
+% \renewcommand{\baselinestretch}{2.0}
+\usepackage[margin=1.2in]{geometry}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+  Special relativity is a theory describing interaction of light and matter at high speeds. It states that the laws of physics are invariant in all inertial frames and that the speed of light in a vacuum is the same for all observers. These postulates lead to some very interesting effects such as that of time dilation and length contraction.
+
+  Evidence for time dilation as well as length contraction and thus evidence for the theory of special relativity can be obtained by observing cosmic muons. When cosmic rays interact with the upper atmosphere, muons are created and come hurtling down to the surface of the earth. Muons decay further and have a mean lifetime of $2.2 \mu s$ and at the speeds they're traveling at, Newtonian physics predicts that we should not be able to detect any at ground level.
+
+  With this experiment, we are creating a muon detector. This detector will count the number of muons detected in a certain time frame in multiple altitudes allowing us to develop a model of the rate of cosmic muon decay and check how consistent it is with the ideas of special relativity.
+
+\section{Theory}
+  The postulate that the speed of light in a vacuum (approximately $2.99 \times 10^8 m/s$, also denoted by $c$) is the same for all observers has a significant impact on objects that are traveling at or near the speed of light in a vacuum. Two observers in different inertial frames that are traveling relative to one another experience time differently. An observer that is at rest will perceive more time as having passed compared to the observer that is moving from a synced reference point. This time dilation is described by equation \ref{timeDilation}.
+
+  \begin{align}\label{timeDilation}
+    \Delta t &= \gamma \Delta t_0 \\
+    \gamma &= \frac{1}{\sqrt{1-(\frac{v}{c})^2}} \nonumber
+  \end{align}
+
+  \begin{center}
+  Where $\Delta t$ refers to the time in the your frame, $t_0$ to the time in the other frame and $v$ to the relative velocity between the two frames.
+  \end{center}
+
+  The Lorentz factor $\gamma$ dictates how velocity affects the dilation of time between inertial frames. Another effect of the same postulate is that length is perceived differently between two inertial frames in relative motion. This length contraction is described by equation \ref{lengthContraction}
+
+  \begin{align}\label{lengthContraction}
+    L &= \gamma L_0
+  \end{align}
+
+  \begin{center}
+  Where $L$ refers to the length in the your frame, $L_0$ to the length in the other frame and $\gamma$ to the Lorentz factor.
+  \end{center}
+
+  Evidence of both time dilation and length contraction can be found by detecting cosmic muons. When cosmic rays, (mostly protons and $\alpha$ particles) interact with the air in the atmosphere a primary shower of particles are formed which consist of pions and other particles, some of which decay into muons. Muons formed in this manner are created around 15 km's above the earths crust.
+
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=80mm]{cosmic_ray.png}
+      \caption{Cosmic ray producing muons}
+      \label{cosmicMuonProduction}
+  \end{figure}
+
+  Muons decay at an exponential rate and therefore surviving muons will be of the form $N=N_0e^{-\lambda t}$ where $N$ is the measured number of muons, $N_0$ is the initial number of muons and $\lambda$ is the decay constant. Muons have different velocities as they fall to earth which is dependent upon their initial energy upon creation which range from about $0.994c$ to $0.998c$.
+
+  Based on this information, we have created a model of muon decay that is dependent on velocity as shown in equation \ref{muonModel}.
+
+  \begin{align}
+    N_v&=N_{v0}e^{-(4.44\times10^5)\frac{(1500-a)\sqrt{1-(\frac{v}{c})^2}}{v}}
+    \label{muonModel}
+  \end{align}
+
+  \begin{center}
+    Where $N_{v0}$ is the number of initial muons at a particular velocity, $N_v$ is the number of muons of that velocity that is measured, and $a$ is altitude.
+  \end{center}
+
+  We are assuming that the velocity distribution of muons can be described by the power law and taking an integral sum over all velocities gives us a model for how many muons we expect to measure at any given altitude as shown in equation \ref{muonIntegral}.
+
+  More coming as Kean figures out more of the math...
+
+  \section{Detector Structure}
+
+  Muons can't be seen with the naked eye and so a detector is required to monitor how many are surviving. Muons can be detected with geiger tubes. The manner in which geiger tubes detect radiation in general along with some properties of cosmic muons determine, to a degree, how the detector must be structured.
+
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=100mm]{geigerTube.png}
+      \caption{Schematic of a geiger Tube}
+      \label{geigerTube}
+  \end{figure}
+
+  Geiger tubes have a low pressure air mixture in them with a difference of several hundred volts between the cathode and the anode. The anode is usually a wire mounted in the center while cathode is a coating on the inside of the case. When ionizing radiation strikes the tube, some of the gas inside ionizes allowing a voltage to flow through thus creating a pulse.
+
+  \subsection{Coincidence Detection}
+  Muons entering a geiger tube create a pulse but so do all sorts of other terrestrial background radiation. There are a number of features of muons that allow us to filter between them and other radiation using coincidence detection. Muons arrive at nearly vertical angles while terrestrial radiation might be from any angle. The fact that the muons are highly energetic mean they can go through multiple detectors whereas most terrestrial radiation cannot. Therefore, to filter out muons from non muons, two tubes can be placed, one above the other and if they fire off simultaneously, then we we can count it as a muon.
+
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=100mm]{muonFilter.png}
+      \caption{Coincidence Detection}
+      \label{muonFilter}
+  \end{figure}
+
+  The final detector needs to be portable and so we decided to go with 2 arrays of 9 geiger tubes placed beneath one another. We also gave a little leeway for coincidence detection since we didn't require that the muons be exactly vertical but as long as the tube underneath or the two next to the tube underneath was hit we would count that as coincidence. There would be Plexiglas shielding between the layers and a wooden box.
+
+  \begin{figure}[H]
+      \centering
+      \def\svgwidth{\linewidth}
+      \input{geigerCoincidence.pdf_tex}
+      \caption{Preliminary schematic of the design of the detector, color coded to show coincidence. A muon is counted if it lights up the tube directly beneath the one activated on the top or the two tubes directly adjacent to that tube.}
+      \label{coincidenceDetection}
+  \end{figure}
+
+  \section{Electronics}
+    Just having the geiger tubes isn't enough to detect muons, there has to be a way to interpret the information that the geiger tubes are giving us.
+
+    The first line of data capture is done through hardware triggers. There is separate circuitry to provide power to the geiger tubes, detect and clean pulses when the geiger tubes conduct and finally do coincidence detection.
+
+    The number of muons are stored in a hardware based counter. This counter is then polled a hundred or so times a second by a raspberry pi with software on it that keeps track of the altitude, as well as the count of muons over a period of time allowing us to calculate the muon flux at a given altitude.
+
+  \subsection{High Voltage Supply}
+    Geiger tubes need a high voltage difference between the two leads and so we needed something that could provide that. Ordinarily the wall outlet could be used for a high voltage input but since we wanted this to be portable we decided to use a circuit that could generate high voltage from a $+5V$ input.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\linewidth]{highVoltageSchematic.png}
+        \caption{The circuit used to generate high voltage electricity and the way the waveforms look at various parts of the circuit}
+        \label{highVoltageSchematic}
+    \end{figure}
+
+    The high voltage circuit can be split into $4$ independent functional parts:
+    \subsubsection{Voltage Regulator}
+      The $+5V$ input goes to a voltage regulator (LM 317 in this case), which allows the output of the regulator to vary from $1.25V$ to $5V$. The voltage regulator is necessary because the final high voltage output is dependent on the input voltage of the next step, the inverter.
+
+      The LM317 has three pins: INput, OUTput, and ADJustment. If the adjustment pin is connected to ground, $1.25V$ is the output. Higher voltages can be achieved by connecting the adjustment pin to a resistive voltage divider between the output and ground as shown in figure \ref{typicalLM317}.
+
+      \begin{figure}[H]
+          \centering
+          \def\svgwidth{100mm}
+          \input{LM317_typical_schematic.pdf_tex}
+          \caption{Typical setup for the LM 317 voltage regulator}
+          \label{typicalLM317}
+      \end{figure}
+
+      The output voltage can be calculated using:
+      \begin{align}
+        V_{Out} = V_{Ref}(1 + \frac{R_1}{R_2})
+      \end{align}
+
+      \begin{center}
+        Where $V_{Ref}$ is generally $1.25V$.
+      \end{center}
+
+      For our purposes, instead of two separate resistors, we used a 10K trim potentiometer. This has the advantage of having a small physical footprint as well as giving us the ability to relatively easily change the voltage output of the regulator and therefore the final voltage output of the high voltage supply.
+
+    \subsubsection{Power Inverter}
+      The output voltage of the LM 317 is then fed into a power inverter(16EPC-T06). Power inverters take a stable DC input and outputs AC current. The inverter doesn't produce any power and all the power being outputted from the inverter comes from it's DC input. This means that while the voltage is being greatly increased, the current is being decreased by a proportional amount.
+
+      The 16EPC-T06 module gives $1000V$ output for $5V$ input, so the input voltage into it needs to be lowered so we can get $400V$ out of it to power the geiger tubes; hence the voltage regulator. However, the response for this inverter is not linear, so we had to use trial and error to figure out that an input voltage of $2.57V$ gave us the output we were looking for.
+
+    \subsubsection{Bridge Rectifier}
+      The geiger tubes need to be powered with DC, so the output from the inverter has to be rectified. We chose to do full wave rectification, i.e.\ using every half cycle from AC instead of every other half cycle as we would in half wave rectification. This allows us to get the correct voltage from the inverter since the average output voltage is higher than for half wave as well as get a smoother DC current with fewer ripples.
+
+      A bridge rectifier circuit was used for the rectification.
+
+      \begin{figure}[H]
+          \centering
+          \def\svgwidth{100mm}
+          \input{bridgeRectifier.pdf_tex}
+          \caption{Flow of electricity through a bridge rectifier. Red represents positive and blue represents negative. The solid lines are input, dashed green line is output.}
+          \label{bridgeRectifier}
+      \end{figure}
+
+      \subsubsection{Zener Diodes}
+        Once it passes through the bridge rectifier, we want to make sure that we don't give the geiger tubes too much voltage and to do that we use zener diodes. A zener diode, unlike a normal diode allows current to flow both ways when a certain voltage has been reached.
+
+        If placed in parallel with the voltage source with reverse bias, i.e.\ current normally cannot flow through, as we have done in this circuit, it regulates voltage to not be above a certain value, in our case $400V$. When the diode's reverse breakdown voltage is reached, the zener diode conducts and since it has low impedance, the voltage across the zener diodes stays at that value.
+
+    \subsection{Pulse Detection}
+      When radiation hits a geiger tube, it momentarily conducts. An RC circuit, shown in figure \ref{singleTube}, is used to capture the signal when a geiger tube activates.
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[width=100mm]{singleTube.png}
+          \caption{Pulse detection circuit for single tube}
+          \label{singleTube}
+      \end{figure}
+
+      The $10 M \omega$ pullup resistor means that when the geiger tube isn't conducting, the pulse is high. When the tube conducts, the RC circuit means that there is a sharp downward spike in voltage and an exponential decay bringing it back up to regular levels.
+
+      The original idea was to convert this decay into a clean negative pulse through the use of two Schmidt triggers. However, when the 74AC14 schmidt trigger was used, there was ringing in the signal as shown in figure \ref{schmidtPulse}.
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[width=100mm]{schmidtPulse.png}
+          \caption{Scope readout of a pulse from the geiger tube with schmidt trigger}
+          \label{schmidtPulse}
+      \end{figure}
+
+      In contrast, using not gates gave a much cleaner signal as well as a shorter one which is helpful in avoiding false positive for muons since we are doing coincidence detection. Ideally, the pulses would be as short as the electronics can detect but no shorter. Given these advantages, we decided to use not gates for pulse detection instead of schmidt triggers.
+
+      \begin{figure}[H]
+          \centering
+          \includegraphics[width=100mm]{notGatePulse.png}
+          \caption{Scope readout of a pulse from the geiger tube with NOT gate}
+          \label{notGatePulse}
+      \end{figure}
+
+      The circuit shown above was for each individual geiger tube and so had to be repeated 18 times for our detector. Printed Circuit Boards (PCB) were used for the pulse detection circuit since it reduced the amount of soldering and made the circuits more physically compact. It also has the added benefit of being able to design the entire thing out on the computer and easily make changes before milling out the physical part. Furthermore, once a board is designed, it can be printed again and again without making changes meaning a repetitive circuit suddenly become a lot easier and much less tedious.
+
+      \subsubsection{Schematic Design}
+        To make a PCB, the first step is designing the schematic. We used a software called autodesk eagle, the free version of which, while coming with limitations had everything that we needed.
+
+        The schematic is made from parts that can be selected from a library or custom made parts. Since all parts of the circuit were off the shelf, the library with its vast store of parts was sufficient.
+
+        The schematic designer had the ability to make hierarchal modules which were made up of basic parts or other modules. This allows one to quickly wire up repetitive circuits. In our case, we created the schematic for 3 geiger tubes as a module, since it used all the ports of the Hex Inverter which has six not gates in it as shown in figure \ref{pulseModule}.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{pulseModule.png}
+            \caption{The module to read out the pulse from 3 geiger tubes. The $\times$ symbols represent holes which are connected to components on the board.}
+            \label{pulseModule}
+        \end{figure}
+
+        These modules can then be copied or connected together easily in the main schematic to create the full schematic for the board.
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=\linewidth]{pulseFullSchematic.png}
+            \caption{The full schematic for the PCB, which handles reading pulses from 9 geiger tubes.}
+            \label{pulseFullSchematic}
+        \end{figure}
+
+        Using modules not only speeds up the workflow, but also simplifies looking at the schematic as a whole. This feature can be used to abstract away the circuit board into functional components resulting in easier comprehension of what the circuit is doing and how the parts fit together.
+
+        The schematic can also be automatically be tested for electrical wiring errors as well as simulated using a program called spice allowing for the testing of ideas without having to use a breadboard leading to faster prototyping as well as making iterative design easier.
+
+        \subsubsection{Board Design}
+
+          Once the design for the schematic is complete, then the circuit board itself can be designed. Circuit board design deals with the physical location of the components on the board along with how the components are wired together.
+
+          Since a board is built off of a schematic, the computer already knows which components are to be wired to which other ones making it easy to keep track of what components go where. Eagle also has an autorouting feature which will automatically place the wires for you once the positions of the components have been selected which is also a time saver. Autorouting can also help you get insights into how the components can be wired. However, autorouting is not a panacea. If the components are badly placed, the autorouting procedure can't be completed since the computer cannot find a path between the components and for more complicated boards it often makes sense to route the traces by hand since that often results in a cleaner looking board.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=\linewidth]{pulseBoard.png}
+              \caption{Final design for the PCB that detects pulses from 9 geiger tubes. The red lines represent the traces present on the top while the blue lines represent those on the bottom.}
+              \label{pulseBoard}
+          \end{figure}
+
+          PCB's can be single or double sided and there are pros and cons of both. Single sided PCBs tend to be simpler to both mill and solder but cannot have any overlapping wires. Double sided PCBs can give more flexibility in component placement and wiring but are harder to mill.
+
+          A double sided PCB has to be milled and drilled on one side and then flipped over while retaining perfect alignment so it can be milled on the opposite side. One way to get around this hurdle is to use registration holes. These are holes that are drilled into the PCB, not to solder components to but rather to help with alignment during the milling process. Usually they are on the 4 corners of the board and in our case they double as mounting holes. Pegs can be placed in these holes so that when the PCB is flipped, they are guided by the pegs to be aligned correctly.
+
+          We decided upon a double sided PCB since there were many overlapping wires in the design and the ability to make the board in a small physical space far outweighed having to deal with issues of alignment.
+
+          Once the board is designed, it can be electronically checked against a set of rules to make sure that the design is all right from a physical standpoint, looking at things like whether the traces are thick enough for the current going through them or whether there is enough isolation between traces. It can also catch other serious issues, for instance if traces overlap or there are 2 components placed to close together. There can also be modifications made for specific things a particular PCB might need, such as limiting the angle the traces can make.
+
+        \subsubsection{CNC milling and soldering}
+          Generally, PCB's are sent to a fabrication lab to be etched out chemically. This means that it can be enough just to specify the widths of the traces and location of the components which is usually done through a series of gerber files.
+
+          When milling a PCB however, some additional information is needed. A CNC  (computer numerical control) machine doesn't understand what traces or components are. Instead, all instructions to it are given in turtle graphics; namely, the machine is told how fast to spin the bit as well as how fast and where to move it to in a format called G-Code. (Will be available either as appendix or separate files, leaning towards separate files, but let me know what you think)
+
+          This requires us to know what bits we are going to use to do the etching on the copper, how thick exactly the layer of copper is, so we can etch it away without affecting the fiberglass layer underneath as well as which bits are to be used for drilling.
+
+          \begin{figure}[H]
+            \centering
+            \def\svgwidth{0.15\linewidth}
+            \input{etchBit.pdf_tex}
+            \caption{Schematic of the etching bit}
+            \label{etchBit}
+          \end{figure}
+
+          These add further constraints since bits of all sizes may not be available and the available tools have to be taken into account when designing the PCB. We went with a triangular engraving bit for etching out traces since a straight one was not available at the small sizes that we required. This gave an additional challenge of making sure that the board was perfectly flat and we had set the zero value for the z-axis exactly on top of the board since the effective size of the bit varied with the depth we cut to. The effective width of the bit can be calculated using equation \ref{etchEquation}.
+
+          \begin{align}
+            2\times h \times \tan \frac{\theta}{2} &= w
+            \label{etchEquation}
+          \end{align}
+
+          Where $h$ is the etching depth, $w$ is the effective etch width and $\theta$ is the angle of the bit as shown in figure \ref{etchBit}.
+
+          Furthermore, etching and drilling isn't done using the same bit requiring changing of tools during the process of creating the PCB. Milling out the PCB, assuming one already has a CNC machine turns out to be faster and cheaper than sending a design to a fabrication lab but certain advanced features such as blind vias or more than 2 layered boards cannot be used. Milling is a good method for prototyping PCB's since it is easy to iterate over previous design and is one of the few ways to prototype surface mount components, since unlike through hole components, breadboards cannot be used.
+
+          \begin{figure}[H]
+              \centering
+              \includegraphics[width=100mm]{pulsePhysical.jpg}
+              \caption{Final PCB to detect pulses. Components soldered in.}
+              \label{pulsePhysical}
+          \end{figure}
+
+          Double sided PCB's present an additional difficulty once the board is milled. Since there are traces on both sided, soldering needs to be done on both sides which is a complication that doesn't exist with breadboards or single sided PCBs. Soldering on the top, where through hole components go can be difficult based on the spacing of all the components.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+%CITATIONS
+%1: https://www.princeton.edu/~romalis/PHYS312/Muon_lifetime1.pdf
+%2: http://bcs.whfreeman.com/webpub/Ektron/FRKT%20College%20Physics%201e/Pocket%20Worked%20Examples/PWE%2025-3%20-%20Muon%20Decay.pdf
+%3: J. I. Pfeffer, Modern Physics (Imperial College Press, 2004)
+% http://hardhack.org.au/cosmic_rays
+% http://www.bbc.co.uk/bitesize/standard/physics/health_physics/nuclear_radiation/revision/5/
