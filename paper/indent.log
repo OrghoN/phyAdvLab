@@ -1,0 +1,79 @@
+INFO: latexindent version 3.4.2, 2018-04-27, a script to indent .tex files
+      latexindent lives here: /usr/share/texmf-dist/scripts/latexindent/
+      Sat Sep 22 01:38:59 2018
+      Filename: relativisticMuon.tex
+INFO: Processing switches:
+      -w|--overwrite: Overwrite mode active, will make a back up of relativisticMuon.tex first
+INFO: Directory for backup files and indent.log: .
+INFO: YAML settings read: defaultSettings.yaml
+      Reading defaultSettings.yaml from /usr/share/texmf-dist/scripts/latexindent/defaultSettings.yaml
+INFO: YAML settings read: indentconfig.yaml or .indentconfig.yaml
+      Reading path information from /home/orgho/.indentconfig.yaml
+      (Alternatively /home/orgho/indentconfig.yaml can be used)
+      ---
+      paths:
+        - /home/orgho/.dotfiles/latexBeautifySettings.yaml
+      
+INFO: YAML settings, reading from the following files:
+      Reading USER settings from /home/orgho/.dotfiles/latexBeautifySettings.yaml
+      ---
+      defaultIndent: '  '
+      indentAfterHeadings:
+        chapter:
+          indentAfterThisHeading: '1'
+          level: '2'
+        paragraph:
+          indentAfterThisHeading: '1'
+          level: '6'
+        part:
+          indentAfterThisHeading: '1'
+          level: '1'
+        section:
+          indentAfterThisHeading: '1'
+          level: '3'
+        subparagraph:
+          indentAfterThisHeading: '1'
+          level: '7'
+        subsection:
+          indentAfterThisHeading: '1'
+          level: '4'
+        subsection*:
+          indentAfterThisHeading: '1'
+          level: '4'
+        subsubsection:
+          indentAfterThisHeading: '1'
+          level: '5'
+      indentAfterItems:
+        description: '1'
+        enumerate: '1'
+        itemize: '1'
+        list: '1'
+      indentRules:
+        align: '  '
+        center: '  '
+        chapter: '  '
+        enumerate: '  '
+        figure: '  '
+        itemize: '  '
+        paragraph: '  '
+        part: '  '
+        section: '  '
+        subparagraph: '  '
+        subsection: '  '
+        subsubsection: '  '
+      onlyOneBackUp: '1'
+      
+INFO: Backup procedure (-w flag active):
+      copying relativisticMuon.tex to ./relativisticMuon.bak
+      ./relativisticMuon.bak was overwritten (see onlyOneBackUp)
+      Backup file: ./relativisticMuon.bak
+      relativisticMuon.tex will be overwritten after indentation
+INFO: Phase 1: searching for objects
+INFO: Phase 2: finding surrounding indentation
+INFO: Phase 3: indenting objects
+INFO: Phase 4: final indentation check
+INFO: Output routine:
+      Overwriting file relativisticMuon.tex
+      --------------
+INFO: Please direct all communication/issues to:
+      https://github.com/cmhughes/latexindent.pl

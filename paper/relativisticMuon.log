@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.16)  17 SEP 2018 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.16)  22 SEP 2018 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -389,20 +389,45 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count127
 \LT@p@ftn=\toks34
 )
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count128
+\lst@gtempboxa=\box35
+\lst@token=\toks35
+\lst@length=\count129
+\lst@currlwidth=\dimen128
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen129
+\lst@width=\dimen130
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen131
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box36
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
-\Gm@cnth=\count128
-\Gm@cntv=\count129
-\c@Gm@tempcnt=\count130
-\Gm@bindingoffset=\dimen128
-\Gm@wd@mp=\dimen129
-\Gm@odd@mp=\dimen130
-\Gm@even@mp=\dimen131
-\Gm@layoutwidth=\dimen132
-\Gm@layoutheight=\dimen133
-\Gm@layouthoffset=\dimen134
-\Gm@layoutvoffset=\dimen135
-\Gm@dimlist=\toks35
+\Gm@cnth=\count136
+\Gm@cntv=\count137
+\c@Gm@tempcnt=\count138
+\Gm@bindingoffset=\dimen132
+\Gm@wd@mp=\dimen133
+\Gm@odd@mp=\dimen134
+\Gm@even@mp=\dimen135
+\Gm@layoutwidth=\dimen136
+\Gm@layoutheight=\dimen137
+\Gm@layouthoffset=\dimen138
+\Gm@layoutvoffset=\dimen139
+\Gm@dimlist=\toks36
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -411,33 +436,33 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
  (./relativisticMuon.aux)
 \openout1 = `relativisticMuon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen136
-\scratchbox=\box35
-\nofMPsegments=\count132
-\nofMParguments=\count133
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen137
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count139
+\scratchdimen=\dimen140
+\scratchbox=\box37
+\nofMPsegments=\count140
+\nofMParguments=\count141
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count142
+\MPscratchDim=\dimen141
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -455,7 +480,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box36
+\AtBeginShipoutBox=\box38
 
 (/usr/share/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
@@ -465,7 +490,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 37.
+Package hyperref Info: Link coloring ON on input line 44.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -473,23 +498,25 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count137
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 37.
-LaTeX Info: Redefining \pageref on input line 37.
-LaTeX Info: Redefining \nameref on input line 37.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
 
 (./relativisticMuon.out) (./relativisticMuon.out)
 \@outlinefile=\write3
 \openout3 = `relativisticMuon.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count146
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -525,75 +552,88 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+LaTeX Font Info:    Try loading font information for U+msa on input line 47.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 47.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./relativisticMuon.toc)
+) (./relativisticMuon.toc
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write4
 \openout4 = `relativisticMuon.toc'.
 
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<cosmic_ray.png, id=87, 301.125pt x 238.8925pt>
+ [2]
+<cosmic_ray.png, id=154, 301.125pt x 238.8925pt>
 File: cosmic_ray.png Graphic file (type png)
 <use cosmic_ray.png>
-Package pdftex.def Info: cosmic_ray.png  used on input line 76.
+Package pdftex.def Info: cosmic_ray.png  used on input line 87.
 (pdftex.def)             Requested size: 227.62204pt x 180.5869pt.
- [2]
+ [3 <./cosmic_ray.png>]
+<quarknetData.jpg, id=169, 580.1675pt x 393.47pt>
+File: quarknetData.jpg Graphic file (type jpg)
+<use quarknetData.jpg>
+Package pdftex.def Info: quarknetData.jpg  used on input line 131.
+(pdftex.def)             Requested size: 284.52756pt x 192.96408pt.
+ [4]
 
-LaTeX Warning: Reference `muonIntegral' on page 3 undefined on input line 94.
+LaTeX Warning: Reference `numericalEq' on page 5 undefined on input line 155.
 
-<geigerTube.png, id=100, 548.0475pt x 308.15125pt>
+[5 <./quarknetData.jpg>]
+<ourqNetFit.jpg, id=190, 1593.955pt x 1025.8325pt>
+File: ourqNetFit.jpg Graphic file (type jpg)
+<use ourqNetFit.jpg>
+Package pdftex.def Info: ourqNetFit.jpg  used on input line 169.
+(pdftex.def)             Requested size: 440.84746pt x 283.70924pt.
+ [6 <./ourqNetFit.jpg>]
+<geigerTube.png, id=198, 548.0475pt x 308.15125pt>
 File: geigerTube.png Graphic file (type png)
 <use geigerTube.png>
-Package pdftex.def Info: geigerTube.png  used on input line 104.
+Package pdftex.def Info: geigerTube.png  used on input line 185.
 (pdftex.def)             Requested size: 284.52756pt x 159.98566pt.
-[3 <./cosmic_ray.png>]
-<muonFilter.png, id=112, 599.23875pt x 265.74281pt>
+<muonFilter.png, id=199, 599.23875pt x 265.74281pt>
 File: muonFilter.png Graphic file (type png)
 <use muonFilter.png>
-Package pdftex.def Info: muonFilter.png  used on input line 116.
+Package pdftex.def Info: muonFilter.png  used on input line 197.
 (pdftex.def)             Requested size: 284.52756pt x 126.18048pt.
- (./geigerCoincidence.pdf_tex
-<geigerCoincidence.pdf, id=114, page=1, 1096.60484pt x 324.00163pt>
+ [7 <./geigerTube.png>]
+(./geigerCoincidence.pdf_tex
+<geigerCoincidence.pdf, id=208, page=1, 1096.60484pt x 324.00163pt>
 File: geigerCoincidence.pdf Graphic file (type pdf)
 <use geigerCoincidence.pdf, page 1>
 Package pdftex.def Info: geigerCoincidence.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 440.84746pt x 130.25093pt.
-) [4 <./geigerTube.png> <./muonFilter.png>]
-<highVoltageSchematic.png, id=123, 1354.56523pt x 421.6855pt>
+) [8 <./muonFilter.png> <./geigerCoincidence.pdf>]
+<highVoltageSchematic.png, id=217, 1354.56523pt x 421.6855pt>
 File: highVoltageSchematic.png Graphic file (type png)
 <use highVoltageSchematic.png>
-Package pdftex.def Info: highVoltageSchematic.png  used on input line 143.
+Package pdftex.def Info: highVoltageSchematic.png  used on input line 224.
 (pdftex.def)             Requested size: 440.84746pt x 137.2392pt.
- [5 <./geigerCoincidence.pdf>]
+
 (./LM317_typical_schematic.pdf_tex
-<LM317_typical_schematic.pdf, id=132, page=1, 452.54253pt x 171.99971pt>
+<LM317_typical_schematic.pdf, id=219, page=1, 452.54253pt x 171.99971pt>
 File: LM317_typical_schematic.pdf Graphic file (type pdf)
 <use LM317_typical_schematic.pdf, page 1>
 Package pdftex.def Info: LM317_typical_schematic.pdf , page1 used on input line
  56.
 (pdftex.def)             Requested size: 284.52756pt x 108.14255pt.
-<LM317_typical_schematic.pdf, id=133, page=2, 452.54253pt x 171.99971pt>
+<LM317_typical_schematic.pdf, id=220, page=2, 452.54253pt x 171.99971pt>
 File: LM317_typical_schematic.pdf Graphic file (type pdf)
 <use LM317_typical_schematic.pdf, page 2>
 Package pdftex.def Info: LM317_typical_schematic.pdf , page2 used on input line
  61.
 (pdftex.def)             Requested size: 284.52756pt x 108.14255pt.
-<LM317_typical_schematic.pdf, id=134, page=3, 452.54253pt x 171.99971pt>
+<LM317_typical_schematic.pdf, id=221, page=3, 452.54253pt x 171.99971pt>
 File: LM317_typical_schematic.pdf Graphic file (type pdf)
 <use LM317_typical_schematic.pdf, page 3>
 Package pdftex.def Info: LM317_typical_schematic.pdf , page3 used on input line
  67.
 (pdftex.def)             Requested size: 284.52756pt x 108.14255pt.
-) [6 <./highVoltageSchematic.png> <./LM317_typical_schematic.pdf> <./LM317_typi
+) [9 <./highVoltageSchematic.png> <./LM317_typical_schematic.pdf> <./LM317_typi
 cal_schematic.pdf
 
 pdfTeX warning: pdflatex (file ./LM317_typical_schematic.pdf): PDF inclusion: m
@@ -603,22 +643,28 @@ ultiple pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./LM317_typical_schematic.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >] (./bridgeRectifier.pdf_tex
-<bridgeRectifier.pdf, id=144, page=1, 239.89726pt x 178.62553pt>
+<bridgeRectifier.pdf, id=230, page=1, 239.89726pt x 178.62553pt>
 File: bridgeRectifier.pdf Graphic file (type pdf)
 <use bridgeRectifier.pdf, page 1>
 Package pdftex.def Info: bridgeRectifier.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 284.52756pt x 211.8747pt.
-<bridgeRectifier.pdf, id=145, page=2, 239.89726pt x 178.62553pt>
+<bridgeRectifier.pdf, id=231, page=2, 239.89726pt x 178.62553pt>
 File: bridgeRectifier.pdf Graphic file (type pdf)
 <use bridgeRectifier.pdf, page 2>
 Package pdftex.def Info: bridgeRectifier.pdf , page2 used on input line 62.
 (pdftex.def)             Requested size: 284.52756pt x 211.8747pt.
-<bridgeRectifier.pdf, id=146, page=3, 239.89726pt x 178.62553pt>
+<bridgeRectifier.pdf, id=232, page=3, 239.89726pt x 178.62553pt>
 File: bridgeRectifier.pdf Graphic file (type pdf)
 <use bridgeRectifier.pdf, page 3>
 Package pdftex.def Info: bridgeRectifier.pdf , page3 used on input line 68.
 (pdftex.def)             Requested size: 284.52756pt x 211.8747pt.
-) [7 <./bridgeRectifier.pdf> <./bridgeRectifier.pdf
+) [10]
+<singleTube.png, id=239, 249.3315pt x 185.9748pt>
+File: singleTube.png Graphic file (type png)
+<use singleTube.png>
+Package pdftex.def Info: singleTube.png  used on input line 282.
+(pdftex.def)             Requested size: 312.9803pt x 233.4668pt.
+ [11 <./bridgeRectifier.pdf> <./bridgeRectifier.pdf
 
 pdfTeX warning: pdflatex (file ./bridgeRectifier.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
@@ -627,79 +673,71 @@ pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./bridgeRectifier.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
 >]
-<singleTube.png, id=156, 226.41399pt x 186.07724pt>
-File: singleTube.png Graphic file (type png)
-<use singleTube.png>
-Package pdftex.def Info: singleTube.png  used on input line 201.
-(pdftex.def)             Requested size: 284.52756pt x 233.84242pt.
-<schmidtPulse.png, id=158, 642.4pt x 481.8pt>
+<schmidtPulse.png, id=249, 642.4pt x 481.8pt>
 File: schmidtPulse.png Graphic file (type png)
 <use schmidtPulse.png>
-Package pdftex.def Info: schmidtPulse.png  used on input line 212.
+Package pdftex.def Info: schmidtPulse.png  used on input line 293.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
- [8 <./singleTube.png>]
-<notGatePulse.png, id=167, 642.4pt x 481.8pt>
+ [12 <./singleTube.png> <./schmidtPulse.png>]
+<notGatePulse.png, id=258, 642.4pt x 481.8pt>
 File: notGatePulse.png Graphic file (type png)
 <use notGatePulse.png>
-Package pdftex.def Info: notGatePulse.png  used on input line 221.
+Package pdftex.def Info: notGatePulse.png  used on input line 302.
 (pdftex.def)             Requested size: 284.52756pt x 213.39682pt.
- [9 <./schmidtPulse.png> <./notGatePulse.png>]
-<pulseModule.png, id=176, 432.8997pt x 309.00827pt>
-File: pulseModule.png Graphic file (type png)
-<use pulseModule.png>
-Package pdftex.def Info: pulseModule.png  used on input line 237.
-(pdftex.def)             Requested size: 440.84746pt x 314.6986pt.
-<pulseFullSchematic.png, id=177, 350.0277pt x 175.1343pt>
+<pulseFullSchematic.png, id=259, 350.0277pt x 175.1343pt>
 File: pulseFullSchematic.png Graphic file (type png)
 <use pulseFullSchematic.png>
-Package pdftex.def Info: pulseFullSchematic.png  used on input line 246.
+Package pdftex.def Info: pulseFullSchematic.png  used on input line 318.
 (pdftex.def)             Requested size: 440.84746pt x 220.59021pt.
-
-[10 <./pulseModule.png>]
-<pulseBoard.png, id=184, 304.44638pt x 247.06256pt>
+ [13 <./notGatePulse.png>]
+<pulseBoard.png, id=267, 304.44638pt x 247.06256pt>
 File: pulseBoard.png Graphic file (type png)
 <use pulseBoard.png>
-Package pdftex.def Info: pulseBoard.png  used on input line 263.
+Package pdftex.def Info: pulseBoard.png  used on input line 334.
 (pdftex.def)             Requested size: 440.84746pt x 357.7603pt.
- [11 <./pulseFullSchematic.png (PNG copy)>] [12 <./pulseBoard.png>] (./etchBit.
-pdf_tex
-<etchBit.pdf, id=196, page=1, 82.73184pt x 71.52014pt>
+
+[14 <./pulseFullSchematic.png (PNG copy)>] [15 <./pulseBoard.png>]
+(./etchBit.pdf_tex
+<etchBit.pdf, id=279, page=1, 82.73184pt x 71.52014pt>
 File: etchBit.pdf Graphic file (type pdf)
 <use etchBit.pdf, page 1>
 Package pdftex.def Info: etchBit.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 66.12442pt x 57.16597pt.
 )
-<pulsePhysical.jpg, id=199, 3564.31625pt x 2754.29pt>
+<pulsePhysical.jpg, id=282, 3564.31625pt x 2754.29pt>
 File: pulsePhysical.jpg Graphic file (type jpg)
 <use pulsePhysical.jpg>
-Package pdftex.def Info: pulsePhysical.jpg  used on input line 304.
+Package pdftex.def Info: pulsePhysical.jpg  used on input line 373.
 (pdftex.def)             Requested size: 284.52756pt x 219.84337pt.
- [13 <./etchBit.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 326.
- [14 <./pulsePhysical.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 326.
+ [16 <./etchBit.pdf>]
+<tubeNumbering.png, id=291, 494.12512pt x 319.09245pt>
+File: tubeNumbering.png Graphic file (type png)
+<use tubeNumbering.png>
+Package pdftex.def Info: tubeNumbering.png  used on input line 389.
+(pdftex.def)             Requested size: 284.52756pt x 183.74939pt.
+ [17 <./pulsePhysical.jpg>] [18 <./tubeNumbering.png>] [19]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 502.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 502.
  (./relativisticMuon.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 326.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 326.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 502.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 502.
 Package rerunfilecheck Info: File `relativisticMuon.out' has not changed.
-(rerunfilecheck)             Checksum: 0F81511D50DAED6D1B1309B7312C6336;920.
+(rerunfilecheck)             Checksum: E9F1D5B6BD663767D140357E2C344E96;1733.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 326.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 502.
  ) 
 Here is how much of TeX's memory you used:
- 9863 strings out of 492649
- 147539 string characters out of 6135778
- 269315 words of memory out of 5000000
- 13520 multiletter control sequences out of 15000+600000
- 11503 words of font info for 45 fonts, out of 8000000 for 9000
+ 11515 strings out of 492649
+ 169246 string characters out of 6135778
+ 315167 words of memory out of 5000000
+ 15114 multiletter control sequences out of 15000+600000
+ 11969 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,39p,921b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,39p,921b,1046s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -711,11 +749,12 @@ public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
 sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb>
-Output written on relativisticMuon.pdf (14 pages, 3200791 bytes).
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt9.pfb>
+Output written on relativisticMuon.pdf (20 pages, 3292092 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
